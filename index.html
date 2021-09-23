@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hello world</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>ESto es un titulo</h1>
-        <h2>Subtitulo dijo el niños</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, fuga! Architecto dolor incidunt illo labore, ut enim eligendi culpa recusandae error, non expedita facere iusto eum corporis in dolore nihil?</p>
-        <a href="pagina2.html">Pagina 2</a>
-    </body>
+
+<head>
+    <title>Pruebas</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Peaky Blinders</h1>
+        <hr>
+        <img src="imgs/logo.jpeg" alt="">
+        <h2>History</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, fuga! Architecto dolor incidunt illo labore,
+            ut enim eligendi culpa recusandae error, non expedita facere iusto eum corporis in dolore nihil?</p>
+    </header>
+
+    <!-- Inicio section -->
+    <section>
+        <!-- lista ordenada se utiliza para enumerar -->
+        <ol start="1">
+            <li>opcion 1</li>
+            <li>opcion 2</li>
+            <li>opcion 3</li>
+            <li>opcion 4</li>
+        </ol>
+        <br>
+        <!-- lista desordenada -->
+        <ul>
+            <li>Opcion 1</li>
+            <li>Opcion 2</li>
+            <li>Opcion 3</li>
+            <li>Opcion 4</li>
+        </ul>
+        <br><br>
+        <!-- Formulario, seleccionado el nombre se vea al campo -->
+        <fieldset>
+            <legend>Formulario</legend>
+            <form action="">
+                <label for="codigo">Codigo
+                    <input id="codigo" value="00001" readonly disabled type="text">
+                </label>
+                <br><br>
+                <label for="nombre">Nombe
+                    <input id="nombre" placeholder="Escribe tu nombre" maxlength="8" type="text">
+                </label>
+                <br><br>
+                <label for="edad">Edad
+                    <input type="range" id="edad" min="18" max="28" step="1">
+                </label>
+                <br><br>
+                <!-- Type number usado para edades, tiempos, no para cedula telefono -->
+                <label for="time_company">Tiempo en la empresa
+                    <input type="number" id="time_companys" step="2" min="1" max="10">
+                </label>
+                <br><br>
+                <!-- Para contraseña -->
+                <label for="password">Ingrese crontraseña
+                    <input type="password">
+                </label>
+                <br><br>
+                <input type="date" min="2021-09-09" max="2021-10-09">
+                <br><br>
+                <input type="color">
+                <br><br>
+                <label for="correo">Correo
+                    <input type="email" id="correo">
+                </label>
+                <br><br>
+                <input type="file" multiple>
+                <br><br>
+                <!-- Enviar algo que esta implicito -->
+                <input type="hidden" value="1234">
+                <input type="button"value="Enviar">
+                <input type="reset" value="Borrar formulario">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formulario 2</legend>
+            <select name="" id="">
+                <option value="1">Medellín</option>
+                <option value="2">Monteria</option>
+                <option value="3">Cali</option>
+            </select><br><br>
+            <label for="">
+                Casado
+                <input type="radio" name="estado_civil">
+            </label>
+            <label for="">
+                Soltero
+                <input type="radio" name="estado_civil" checked>
+            </label>
+            <label for="">
+                Divorciado
+                <input type="radio" name="estado_civil">
+            </label>
+            <br><br>
+            <label for="">
+                <input type="checkbox">
+                Cantar
+            </label>
+            <label for="">
+                <input type="checkbox">
+                Trotar
+            </label>
+            <label for="">
+                <input type="checkbox">
+                Bailar
+            </label>
+            <label for="">
+                <input type="checkbox">
+                Nadar
+            </label>
+            <br><br>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+            <label for="">Ciudad
+                <input type="text" name="ciudad" list="lista_ciudades">
+                <datalist id="lista_ciudades">
+                    <option value="Medellín">Medellín</option>
+                    <option value="Monteria">Monteria</option>
+                    <option value="Cali">Cali</option>
+                </datalist>
+            </label>
+        </fieldset>
+    </section>
+
+    <!-- Inicio footer -->
+    <footer>
+        <nav>
+            <a href="pagina2.html">Pagina 2</a>
+        </nav>
+    </footer>
+
+</body>
+
 </html>
