@@ -1,0 +1,48 @@
+#contenedor_direccion {
+    background: lightblue;
+}
+
+.seccion {
+    border: 2px solid lawngreen;
+    
+}
+
+li {
+    text-decoration: underline;
+}
+#menu_redes{
+    position: relative;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    background: gray;
+    border-radius: 0px 0px 20px 20px;
+
+}
+#hermanos{
+    position: relative;
+    border: 1px solid gray;
+    overflow: hidden;
+    margin: auto;
+}
+#correo{
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+/* Pagina 3 */
+
+@font-face {
+    font-family: 'gemunu_libreextralight';
+    src: url('../fonts/gemunulibre-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/gemunulibre-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1{
+    font-family: gemunu_libreextralight;
+}
+

@@ -4,11 +4,12 @@
 <head>
     <title>Pruebas</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="seccion">
         <h1>The Peaky Blinders</h1>
         <hr>
         <img src="imgs/logo.jpeg" alt="">
@@ -18,7 +19,7 @@
     </header>
 
     <!-- Inicio section -->
-    <section>
+    <section class="seccion">
         <!-- lista ordenada se utiliza para enumerar -->
         <ol start="1">
             <li>opcion 1</li>
@@ -67,6 +68,10 @@
                 <br><br>
                 <label for="correo">Correo
                     <input type="email" id="correo">
+                </label>
+                <br><br>
+                <label for="direccion">Direccion
+                    <input type="text" id="direccion">
                 </label>
                 <br><br>
                 <input type="file" multiple>
@@ -126,9 +131,10 @@
             </label>
         </fieldset>
     </section>
+    
 
     <!-- Inicio footer -->
-    <footer>
+    <footer id="contenedor_direccion" class="seccion">
         <nav>
             <a href="pagina2.html">Pagina 2</a>
         </nav>
